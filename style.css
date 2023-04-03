@@ -1,0 +1,576 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black
+}
+a:visited {
+    color: black;
+}
+.top--header{
+    position: absolute;
+}
+body {
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+
+.container {
+    position: relative;
+}
+.top {
+    position: relative;
+}
+.top--imgs {
+    width: 100%;
+    display: flex;
+    background-color: #F3A26D;
+}
+.top--imgs__right {
+    width: 100%;
+    z-index: 2;
+    overflow: hidden;
+    clip-path: polygon(59% 0, 100% 0, 100% 100%, 30% 100%);
+}
+.top--imgs__right img {
+    width: 80vw;
+    transform: translateX(30vw);
+}
+nav  {
+    width:100%;
+    display: flex;
+    font-size: 1.5vw;
+    z-index: 99;
+    justify-content: space-around;
+}
+.top--header h1 {
+    margin: 0;
+    font-size: 1.8vw;
+    line-height: 2.5;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5vw;
+    padding: 1vw;
+    width: 80%;
+    line-height: 1.8;
+}
+header {
+    width: 90%;
+    display: flex;
+}
+.top--text {
+    position: absolute;
+    top: 12vw;
+    left: 12vw;
+    z-index: 99;
+}
+.top--text p:first-child {
+    font-family: 'Alegreya', serif;
+    font-weight: 600;
+    font-size: 6vw;
+    line-height: 1.2;
+}
+.top--text p:last-child {
+    font-size: 2.7vw;
+    font-weight: 500;
+}
+.white {
+    color: white;
+}
+.circle {
+    width: 3vw;
+    height: 3vw;
+    background-color: #F3A26D;
+    border-radius: 50em;
+    font-size: 4vw;
+    font-weight: 500;
+}
+header > h1 {
+    font-size: 3vw;
+    padding-left: 5vw;
+    margin: 8vw 0;
+}
+main {
+    background-color: white;
+    transform: translateY(-0.25em);
+}
+.main--icons {
+    display: flex;
+    justify-content: center;
+}
+.main--icons ul {
+    display: flex;
+}
+.main--icons--img img {
+    width: 5vw;
+}
+.main--icons li {
+    padding: 1vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Alegreya Sans', sans-serif;
+    transition: box-shadow 0.2s ease-in;
+}
+.main--icons li:hover {
+    box-shadow: 0 0 1vw rgba(0,0,0,0.7);
+}
+.main--icons--p {
+    width: 20vw;
+    font-size: 1.5vw;
+}
+.main--icons--title {
+    font-size: 2vw;
+    font-weight: 500;
+    margin: 1vw 0;
+}
+.terior  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+.teriorImg {
+    width: 28vw;
+    height: 40vw;
+}
+.teriorImg img {
+    width: 28vw;
+    height: 40vw;
+    object-fit: cover;
+    box-shadow: 0.3em 0.3em 1em rgba(0,0,0,0.7);
+}
+.teriorBox {
+    display: flex;
+    margin: 0 10vw;
+    width: 62%;
+    justify-content: space-between;
+    height: 60vw;
+}
+.exterior, .interior {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.exterior {
+    order: 2;
+}
+.interior {
+    text-align: right;
+}
+.terior > h1, .facilities > h1 {
+    font-size: 2.5vw;
+    margin: 8vw 0;
+}
+.interior--img img {
+    height: 39.5vw
+}
+.interior--text {
+    order: 2;
+}
+.exterior--img {
+    order: 1
+}
+.teriorText {
+    width: 28vw;
+    font-size: 1.5vw;
+}
+.teriorText h1 {
+    font-size: 1.8vw;
+    padding-bottom: 0.5vw;
+}
+.facilities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+.facilities h1 {
+    text-align: center;
+}
+.facilities--img {
+    width:22vw;
+    height: 15vw;
+    z-index: -1;
+}
+.facilities--img img {
+    width:22vw;
+    height: 15vw;
+}
+.facilities ul li {
+    padding: 0 3vw
+}
+.facilities ul {
+    display: flex;
+    position: relative;
+    overflow:auto;
+    width:100%;
+    padding: 0 5vw;
+    height: 17vw;
+}
+.facilities ul::-webkit-scrollbar {
+    display: none;
+}
+.facilities--text {
+    width: 22vw;
+    height: 15vw;
+    position:absolute;
+    top: 0;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    padding: 1vw;
+    font-size: 1.2vw;
+    transition: all 0.2s ease-in-out;
+}
+
+.table {
+    background-color: #F3A26D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vw;
+
+}
+table {
+    border: 1px solid #fff;
+    width: 90vw;
+    border-collapse: collapse;
+    text-align: center;
+
+}
+.tableTitle {
+    font-weight: 600;
+}
+th, td {
+    border: 1px solid #fff;
+    padding: 1vw;
+}
+thead tr {
+    background-color: white;
+    font-size: 2vw;
+}
+td {
+    width: 12vw;
+    font-weight: 500;
+    font-size: 1.8vw;
+}
+.pricing--table {
+    margin-top: 5vw;
+}
+.info {
+    margin-top: 5vw;
+    background-color: #F3A26D;
+    width: 100%;
+}
+.info div {
+    margin: 0 4vw;
+    font-size: 2vw;
+}
+.service--img {
+    width: 25vw;
+    height: 16.7vw;
+    overflow: hidden;
+    position: relative;
+}
+.health img {
+    height: 16.7vw;
+}
+.deliveryImg img {
+    top: -4vw;
+}
+.service--img img {
+    width: 25vw;
+    object-fit: cover;
+    position: absolute;
+}
+.services {
+    width: 100%;
+}
+.services ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5.5vw;
+}
+.facilities--text:hover{
+    background-color: rgba(0,0,0,0.6);
+    opacity: 1;
+    cursor: pointer;
+}
+.services ul li {
+    position: relative;
+}
+.service--hover {
+    position: absolute;
+    top:0;
+    font-size: 1.5vw;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    opacity: 0;
+}
+.service--hover i {
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 50%;
+    width: 3vw;
+    height: 3vw;
+    text-align: center;
+    line-height: 2;
+}
+.service--hover h3 {
+    font-weight: 400;
+    padding-top: 1vw
+}
+.service--hover:hover {
+    opacity: 1;
+    background-color: rgba(0,0,0,0.7);
+}
+.footerBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer--map {
+    width: 88.9vw;
+    height: 60vw;
+    position: relative;
+}
+.footer--map img {
+    width: 88.9vw;
+    height: 60vw;
+    object-fit: cover;
+}
+.footer--map i {
+    position: absolute;
+    top:26vw;
+    left: 40vw;
+    font-size: 6vw;
+    color: #FD003A;
+}
+.footer--contact {
+    margin: 5vw 0 10vw;
+}
+.footer--contact dl div {
+    display: flex;
+    font-size: 2vw;
+    padding-left: 5vw;
+}
+.footer--contact dl dt {
+    width: 7vw;
+    margin-right: 8vw
+}
+.bar, .exit {
+    display: none;
+}
+@media screen and (max-width: 725px) {
+    body {
+        position: relative;
+
+    }
+    nav {
+        z-index: 999;
+
+    }
+    nav ul {
+        width: 100vw;
+        flex-direction: column;
+        position: absolute;
+        top:0;
+        right: -6.5em;
+        padding:0;
+        background-color: #fff;
+        width: 60%;
+        height: 100vh;
+        justify-content: flex-start;
+        padding-top: 8vw;
+        display: none;
+    }
+    nav ul li {
+        text-align: center;
+        width: 100%;
+        font-size: 4vw;
+        margin-top: 1em;
+    }
+    nav ul li:hover a {
+
+        color: #fff;
+    }
+    nav ul li:hover {
+        background-color: #F3A26D;
+    }
+    nav h1 {
+        font-size: 3vw;
+    }
+
+    .bar {
+        position: absolute;
+        top:1vw;
+        display: block;
+        right:2vw;
+        z-index: 99;
+        font-size: 7vw;
+        color: #fff;
+        cursor: pointer;
+    }
+    .exit {
+        font-size: 8vw;
+        z-index: 999;
+        position: absolute;
+        top: 0.1em;
+        right: -0.9em;
+        cursor: pointer;
+        display: none;
+    }
+    
+    .main--icons {
+        height: 100vw;
+    }
+    .main--icons li {
+        width: 45vw;
+        height: 45vw;
+    }
+    .main--icons ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: self-end;
+    }
+    .main--icons--p {
+        width: 40vw;
+        font-size: 3.5vw;
+    }
+    .main--icons--title {
+        font-size: 4vw;
+    }
+    .main--icons--img img {
+        width: 8vw;
+    }
+    header > h1 {
+        font-size: 5vw;
+    }
+    .circle {
+        font-size: 7vw;
+    }
+    .terior > h1, .facilities > h1 {
+        font-size: 4vw;
+    }
+    .teriorBox {
+        height: auto;
+        width: 90%;
+    }
+    .teriorText {
+        width:auto;
+        font-size: auto;
+    }
+    .teriorImg img {
+        width: 43vw;
+    }
+    .teriorText h1 {
+        font-size: 3.8vw;
+    }
+    .teriorText {
+        font-size: 2.6vw;
+        padding: 0.5em;
+    }
+    .teriorImg {
+        width: 44vw;
+        height:auto;
+    }
+    .exterior--img img {
+        height: 40vw;
+        width: 100%;
+    }
+    .interior--img img {
+        height: 43vw;
+    }
+    .interior--text {
+        margin-top: 20vw;
+    }
+    .exterior--text {
+        margin-top: 5vw;
+    }
+    .facilities--img {
+        width: 70vw;
+        height: 44vw;
+    }
+    .facilities--img img {
+        width: 70vw;
+        height: 44vw;
+    }
+    .facilities ul {
+        height: auto;
+    }
+    .facilities--text {
+        width: 70vw;
+        height: 44vw;
+        font-size: 3.5vw;
+    }
+    .facilities--text > p {
+        padding-top: 1.2vw;
+    }
+    .services ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .services ul li:nth-child(2) {
+        margin: 5vw 0;
+    }
+    .service--img {
+        width: 83vw;
+        height: 50.7vw;
+    }
+    .service--img img {
+        width: 83vw;
+    }
+    .service--hover i {
+        line-height: 2.5;
+        width: 13vw;
+        height: 13vw;
+    }
+    .service--hover {
+        font-size: 5.5vw;
+    }
+    .table {
+        height: 120vw;
+    }
+    thead tr, .info div {
+        font-size: 4vw;
+    }
+    td {
+        font-size: 4.8vw;
+        width: 27vw;
+    }
+    .footer--contact dl div {
+        font-size: 4vw;
+    }
+    .dis {
+        display: flex;
+    }
+    .show {
+        display: block;
+    }
+    .hide {
+        display: none;
+    }
+}
